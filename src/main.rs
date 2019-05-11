@@ -1,9 +1,14 @@
 use std::io::Write;
+use std::str::FromStr;
 
 fn main() {
-    let args: Vec<String> = std::env::args().collect();
+    let mut numbers = Vec::new();
 
-    if args.len() != 2 {
+    for arg in std::env::args().skip(1) {
+        numbers.push(u8::from_str(&arg).expect("error parsing argument"))
+    }
+
+    if numbers.len() != 1 {
         writeln!(std::io::stderr(), "Invalid number of arguments.").unwrap();
         std::process::exit(1);
     }
@@ -11,6 +16,6 @@ fn main() {
     println!(".intel_syntax noprefix");
     println!(".global main");
     println!("main:");
-    println!("  mov rax, {}", args[1]);
+    println!("  mov rax, {}", numbers[0]);
     println!("  ret");
 }
