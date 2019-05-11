@@ -1,6 +1,6 @@
-# 8cc.rust C Compiler
+# 9cc.rust C Compiler
 
-8cc.rust is a C Compiler written in Rust. It's a port of 8cc (https://github.com/rui314/8cc). Inspired by DQNEO's 8cc.go (https://github.com/DQNEO/8cc.go).
+9cc.rust is a C Compiler written in Rust. This project is a rust implementation of [9cc](https://github.com/rui314/9cc) and be implementing according to [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook/). Inspired by DQNEO's 8cc.go (https://github.com/DQNEO/8cc.go).
 
 # Author
 
