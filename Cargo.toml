@@ -1,0 +1,6 @@
+[package]
+name = "r9cc"
+version = "0.1.0"
+authors = ["Ryusuke SEKIYAMA <rsky0711@gmail.com>"]
+
+[dependencies]
